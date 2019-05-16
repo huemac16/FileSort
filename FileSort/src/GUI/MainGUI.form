@@ -49,8 +49,9 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="lbHeadline" pref="134" max="32767" attributes="0"/>
                       <Component id="jLabel1" min="-2" pref="116" max="-2" attributes="0"/>
-                      <Component id="btChooseDirectory" alignment="0" min="-2" pref="79" max="-2" attributes="0"/>
+                      <Component id="btChooseDirectory" alignment="0" min="-2" pref="45" max="-2" attributes="0"/>
                       <Component id="tfLocation" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="402" max="32767" attributes="0"/>
               </Group>
@@ -63,10 +64,12 @@
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btChooseDirectory" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btChooseDirectory" min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="tfLocation" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="65" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -93,10 +96,29 @@
         </Component>
         <Component class="javax.swing.JButton" name="btChooseDirectory">
           <Properties>
-            <Property name="text" type="java.lang.String" value="logo:ordner"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Design/dir.png"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
+            <Property name="defaultCapable" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btChooseDirectoryActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="tfLocation">
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="sort"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
